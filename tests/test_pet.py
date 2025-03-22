@@ -133,7 +133,7 @@ class TestPet:
         with allure.step("Проверка статуса ответа"):
             assert response.status_code == 200, "Код ответа не совпал с ожидаемым"
 
-        with allure.step("Удаление созданного питомца по ID"):
+        with allure.step("Отправка запроса на получение информации об удалённом питомце"):
             response = requests.get(url=f"{BASE_URL}/pet/{pet_id}")
 
         with allure.step("Проверка статуса ответа"):
