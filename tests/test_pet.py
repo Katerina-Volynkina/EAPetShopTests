@@ -147,7 +147,8 @@ class TestPet:
             ("available", 200),
             ("pending", 200),
             ("sold", 200),
-            ('',400)
+            ('',400),
+            ('fox', 400)
             ]
     )
     def test_get_pet_by_status(self, status, expected_status_code):
