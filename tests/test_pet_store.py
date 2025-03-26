@@ -72,7 +72,7 @@ class Test_Store:
 
     @allure.title("Получение инвентаря магазина")
     def test_get_inventory_shop(self):
-        with allure.step(""):
+        with allure.step("Отправка запроса на получение инвентаря магазина"):
             response = requests.get(f'{BASE_URL}/store/inventory')
 
         with allure.step("Проверка статуса ответа и данных инвентаря"):
