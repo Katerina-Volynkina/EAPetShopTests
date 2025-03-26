@@ -37,7 +37,7 @@ class Test_Store:
 
         with allure.step("Проверка статуса ответа и данных заказа"):
                 assert response.status_code == 200, "Код ответа не совпал с ожидаемым"
-                assert response.json()['id'] == 1, "id  не совпало с ожидаемым"
+                assert response.json()['id'] == 1, "ID  не совпало с ожидаемым"
 
 
 
